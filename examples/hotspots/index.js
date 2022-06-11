@@ -41,7 +41,7 @@ var scenes = {
     }
   },
   whaleLeft: {
-    image: 'whale-left.jpg',
+    image: 'dolphins1.jpg',
     preview: 'whale-left-preview.jpg',
     hotspots: {
       whaleRight: {
