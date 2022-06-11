@@ -19,6 +19,7 @@ var scenes = {
   dolphins: {
     image: 'dolphins.jpg',
     preview: 'dolphins-preview.jpg',
+	mod:1,  
     hotspots: {
       whaleRight: {
         pitch: 0,
@@ -27,9 +28,9 @@ var scenes = {
         distance: 1
       },
       whaleLeft: {
-        pitch: 0,
+        pitch:30,
         yaw: 150,
-        radius: 0.05,
+        radius: 0.9,
         distance: 1
       },
       walrus: {
@@ -42,7 +43,8 @@ var scenes = {
   },
   whaleLeft: {
     image: 'dolphins1.jpg',
-    preview: 'whale-left-preview.jpg',
+    preview: 'dolphins-preview.jpg',
+  	mod:0,  
     hotspots: {
       whaleRight: {
         pitch: 0,
@@ -67,6 +69,7 @@ var scenes = {
   whaleRight: {
     image: 'whale-right.jpg',
     preview: 'whale-right-preview.jpg',
+  	mod:1,  
     hotspots: {
       dolphins: {
         pitch: 0,
@@ -75,9 +78,9 @@ var scenes = {
         distance: 1
       },
       whaleLeft: {
-        pitch: 0,
+        pitch: 30,
         yaw: 180,
-        radius: 0.05,
+        radius: 0.9,
         distance: 1
       },
       walrus: {
@@ -91,11 +94,12 @@ var scenes = {
   walrus: {
     image: 'walrus.jpg',
     preview: 'walrus-preview.jpg',
-    hotspots: {
+    mod:1,  
+     hotspots: {
       whaleLeft: {
-        pitch: 0,
+        pitch: 30,
         yaw: 20,
-        radius: 0.05,
+        radius: 0.9,
         distance: 1
       },
       whaleRight: {
@@ -153,17 +157,31 @@ function onHotspotClick(e) {
 
 function loadScene(id) {
   console.log('loadScene', id);
-
+  var vmod = scenes[id].mod;
+	 
   // Set the image
+  if(vmod==0)
+  {
+  var vHeight=480;
+   var vwidth=1052;
+  }
+  else
+	{
+	var vHeight=240,
+    var vwidth=526;
+  }	  
   vrView.setContent({
     image: scenes[id].image,
     preview: scenes[id].preview,
+	clientHeight:vHeight,
+	clientWidth:vwidth,  
     is_stereo: true,
     is_autopan_off: true
   });
-
+ 
   // Add all the hotspots for the scene
   var newScene = scenes[id];
+	
   var sceneHotspots = Object.keys(newScene.hotspots);
   for (var i = 0; i < sceneHotspots.length; i++) {
     var hotspotKey = sceneHotspots[i];
