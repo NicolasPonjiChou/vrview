@@ -20,6 +20,12 @@ var scenes = {
     image: 'dolphins.jpg',
     preview: 'dolphins-preview.jpg',
     hotspots: {
+		 moves:{ 
+		pitch: 0,
+        yaw: 90,
+        radius: 0.05,
+        distance: 1}	
+    },
       whaleRight: {
         pitch: 0,
         yaw: 110,
@@ -37,13 +43,8 @@ var scenes = {
         yaw: 170,
         radius: 0.05,
         distance: 1
-      },
-	  moves:{ 
-		pitch: 0,
-        yaw: 70,
-        radius: 0.05,
-        distance: 1}	
-    }
+      }
+	 
   },
   whaleLeft: {
     image: 'whale-left.jpg',
@@ -116,7 +117,32 @@ var scenes = {
         distance: 1
       }
     }
-  }
+  },
+ moves: {
+    image: 'dolphins.jpg',
+    preview: 'dolphins-preview.jpg',
+    hotspots: {
+      whaleLeft: {
+        pitch: 0,
+        yaw: 20,
+        radius: 0.05,
+        distance: 1
+      },
+      whaleRight: {
+        pitch: 0,
+        yaw: 340,
+        radius: 0.05,
+        distance: 1
+      },
+      dolphins: {
+        pitch: 0,
+        yaw: 320,
+        radius: 0.05,
+        distance: 1
+      }
+		
+    }
+  }	
 };
 
 function onLoad() {
