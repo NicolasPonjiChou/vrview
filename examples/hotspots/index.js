@@ -167,7 +167,7 @@ function loadScene(id) {
   }
   else
 	{
-	var vHeight=240,
+	var vHeight=240;
     var vwidth=526;
   }	  
   vrView.setContent({
