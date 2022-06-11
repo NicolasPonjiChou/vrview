@@ -158,17 +158,19 @@ function onHotspotClick(e) {
 function loadScene(id) {
   console.log('loadScene', id);
   var vmod = scenes[id].mod;
-	 
+  var vHeight=0;
+  var vwidth=0;
+	
   // Set the image
   if(vmod==0)
   {
-  var vHeight=480;
-   var vwidth=1052;
+   vHeight=480;
+    vwidth=1052
   }
   else
 	{
-	var vHeight=240;
-    var vwidth=526;
+	 vHeight=240;
+     vwidth=526
   }	  
   vrView.setContent({
     image: scenes[id].image,
