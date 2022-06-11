@@ -40,7 +40,7 @@ var scenes = {
       },
 	  moves:{ 
 		pitch: 0,
-        yaw: 190,
+        yaw: 70,
         radius: 0.05,
         distance: 1}	
     }
