@@ -1,3 +1,4 @@
+// JavaScript Document
 ! function (f) {
     if ("object" == typeof exports &&
         "undefined" != typeof module)
@@ -10,7 +11,8 @@
             window : "undefined" !=
             typeof global ? global :
             "undefined" != typeof self ?
-            self : this).VRView = f()
+            self : this)
+        .VRView = f()
     }
 }(function () {
     return function e(t, n, r) {
@@ -54,7 +56,7 @@
                         var n =
                             t[
                                 o
-                                ]
+                            ]
                             [
                                 1]
                             [
@@ -65,8 +67,8 @@
                         )
                     }, l, l
                     .exports
-                    , e, t,
-                    n
+                    , e, t
+                    , n
                     , r)
             }
             return n[o].exports
@@ -181,7 +183,7 @@
                         ];
                     if (
                         exists
-                        )
+                    )
                         return !
                             !
                             available;
@@ -209,7 +211,7 @@
                     )
                         ee[
                             i
-                            ] =
+                        ] =
                         available[
                             i
                         ]
@@ -397,7 +399,7 @@
                                 listeners
                                     [
                                         i
-                                        ]
+                                    ]
                                     .fn
                                     .call(
                                         listeners[
@@ -410,7 +412,7 @@
                                 listeners
                                     [
                                         i
-                                        ]
+                                    ]
                                     .fn
                                     .call(
                                         listeners[
@@ -424,7 +426,7 @@
                                 listeners
                                     [
                                         i
-                                        ]
+                                    ]
                                     .fn
                                     .call(
                                         listeners[
@@ -459,7 +461,7 @@
                                 listeners
                                     [
                                         i
-                                        ]
+                                    ]
                                     .fn
                                     .apply(
                                         listeners[
@@ -520,6 +522,12 @@
                             ._events[
                                 evt
                             ]
+
+
+
+
+
+                            
                             , listener
                             ] :
                         this
@@ -585,6 +593,12 @@
                             ._events[
                                 evt
                             ]
+
+
+
+
+
+                            
                             , listener
                             ] :
                         this
@@ -633,7 +647,7 @@
                         , events = [];
                     if (
                         fn
-                        )
+                    )
                         if (listeners
                             .fn
                         )
@@ -1362,15 +1376,75 @@
                 function () {
                     var styleString = [
                             "iframe.vrview-fake-fullscreen"
+
+
+
+
+
+                            
                             , "{"
+
+
+
+
+
+                            
                             , "position: fixed !important;"
+
+
+
+
+
+                            
                             , "display: block !important;"
+
+
+
+
+
+                            
                             , "z-index: 9999999999 !important;"
+
+
+
+
+
+                            
                             , "top: 0 !important;"
+
+
+
+
+
+                            
                             , "left: 0 !important;"
+
+
+
+
+
+                            
                             , "width: 100% !important;"
+
+
+
+
+
+                            
                             , "height: 100% !important;"
+
+
+
+
+
+                            
                             , "margin: 0 !important;"
+
+
+
+
+
+                            
                             , "}"
                             ]
                         .join(
@@ -1447,7 +1521,19 @@
                             .getDirName_()
                             , urlParams = [
                                 "image"
+
+
+
+
+
+                                
                                 , "preview"
+
+
+
+
+
+                                
                                 , "video"
                                 ]
                             , i =
@@ -1478,7 +1564,7 @@
                             contentInfo
                                 [
                                     name
-                                    ] =
+                                ] =
                                 absolute
                         }
                     }
@@ -1641,10 +1727,10 @@
                     )
                         out[
                             key
-                            ] =
+                        ] =
                         obj[
                             key
-                            ];
+                        ];
                     return out
                 }
                 , Util
@@ -1709,7 +1795,7 @@
                                         callback
                                             (
                                                 buffer
-                                                )
+                                            )
                                     }
                                     , function (
                                         e
@@ -1731,11 +1817,12 @@
                                     e
                                     .loaded /
                                     e
+
                                     .total;
                                 opt_progressCallback
                                     (
                                         percent
-                                        )
+                                    )
                             }
                         )
                         , request
@@ -1990,6 +2077,7 @@
                             "?"
                         )[
                             0
+
                         ]
                 }
                 , Util
