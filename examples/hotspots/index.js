@@ -19,7 +19,7 @@ var scenes = {
   dolphins: {
     image: 'dolphins.jpg',
     preview: 'dolphins-preview.jpg',
-	mod:1,  
+	mod:'1',  
     hotspots: {
       whaleRight: {
         pitch: 0,
@@ -44,7 +44,7 @@ var scenes = {
   whaleLeft: {
     image: 'dolphins1.jpg',
     preview: 'dolphins-preview.jpg',
-  	mod:0,  
+  	mod:'0',  
     hotspots: {
       whaleRight: {
         pitch: 0,
@@ -69,7 +69,7 @@ var scenes = {
   whaleRight: {
     image: 'whale-right.jpg',
     preview: 'whale-right-preview.jpg',
-  	mod:1,  
+  	mod:'1',  
     hotspots: {
       dolphins: {
         pitch: 0,
@@ -94,7 +94,7 @@ var scenes = {
   walrus: {
     image: 'walrus.jpg',
     preview: 'walrus-preview.jpg',
-    mod:1,  
+    mod:'1',  
      hotspots: {
       whaleLeft: {
         pitch: 30,
@@ -162,9 +162,8 @@ function loadScene(id) {
   var vwidth=0;
 	
   // Set the image
-  if(vmod==0)
-  {
-   vHeight=480;
+  if(vmod=='0')  {
+    vHeight=480;
     vwidth=1052
   }
   else
