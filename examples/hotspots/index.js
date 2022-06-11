@@ -23,7 +23,7 @@ var scenes = {
 		 moves:{ 
 		pitch: 0,
         yaw: 90,
-        radius: 0.05,
+        radius: 1,
         distance: 1}	
     },
       whaleRight: {
@@ -62,13 +62,19 @@ var scenes = {
         radius: 0.05,
         distance: 1
       },
+	 moves:{ 
+		pitch: 0,
+        yaw: 70,
+        radius: 1,
+        distance: 0}	
+    },
       walrus: {
         pitch: 0,
         yaw: 30,
         radius: 0.05,
         distance: 1
       }
-    }
+    
   },
   whaleRight: {
     image: 'whale-right.jpg',
@@ -80,6 +86,12 @@ var scenes = {
         radius: 0.05,
         distance: 1
       },
+	 moves:{ 
+		pitch: 0,
+        yaw: 250,
+        radius: 1,
+        distance: 0	
+    },	
       whaleLeft: {
         pitch: 0,
         yaw: 180,
@@ -92,7 +104,7 @@ var scenes = {
         radius: 0.05,
         distance: 1
       }
-    }
+    
   },
   walrus: {
     image: 'walrus.jpg',
@@ -115,7 +127,13 @@ var scenes = {
         yaw: 320,
         radius: 0.05,
         distance: 1
-      }
+      },
+	 moves:{ 
+		pitch: 0,
+        yaw: 300,
+        radius: 1,
+        distance: 0	
+     }		
     }
   },
  moves: {
