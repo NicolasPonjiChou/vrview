@@ -123,7 +123,7 @@ function onLoad() {
     image: 'blank.png',
     preview: 'blank.png',
     is_stereo: true,
-    is_autopan_off: true
+    is_autopan_off: false
   });
 
   vrView.on('ready', onVRViewReady);
@@ -160,7 +160,7 @@ function loadScene(id) {
  vrView.setContent({
     image: scenes[id].image,
     preview: scenes[id].preview,
-    is_autopan_off: false,
+    is_autopan_off: false
   });
  
   // Add all the hotspots for the scene
