@@ -157,27 +157,10 @@ function onHotspotClick(e) {
 
 function loadScene(id) {
   console.log('loadScene', id);
-  var vmod = scenes[id].mod;
-  var vHeight=0;
-  var vwidth=0;
-	
-  // Set the image
-  if(vmod=='0')  {
-    vHeight=480;
-    vwidth=1052
-  }
-  else
-	{
-	 vHeight=240;
-     vwidth=526
-  }	  
-  vrView.setContent({
+ vrView.setContent({
     image: scenes[id].image,
     preview: scenes[id].preview,
-	clientHeight:vHeight,
-	clientWidth:vwidth,  
-    is_stereo: true,
-    is_autopan_off: true
+    is_autopan_off: false,
   });
  
   // Add all the hotspots for the scene
