@@ -17,7 +17,7 @@ var vrView;
 // All the scenes for the experience
 var scenes = {
   dolphins: {
-    image: 'dolphins.jpg',
+    image: 'lobby.jpg',
     preview: 'dolphins-preview.jpg',
 	mod:'1',  
     hotspots: {
